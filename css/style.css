@@ -13,17 +13,16 @@ body,
 html {
   background-color: #c6d4d5;
   font-family: "Inter";
-  height: 100%;
 }
 
 .app-body {
   max-width: 75%;
   margin: 0 auto;
   padding: 1em 0.5em;
-  height: 100%;
 }
 
 .options {
+  color: #462465;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -70,24 +69,95 @@ html {
   text-align: center;
   background-color: #f9fbfe;
   border: 5px solid #ffffff;
-  border-radius: 15px;
+  border-radius: 8px;
   color: #462465;
   padding: 1.3rem 0.1rem;
 }
 
-.plane-container {
-  flex: 3;
-  margin-top: 0.5em;
-  border: 5px solid #ffffff;
-  border-radius: 5px;
-  /* padding: 30px 10px; */
-}
 .active {
   background-color: #d5dfdf;
   width: 100%;
   text-align: center;
   padding: 0.5em 0;
   border-radius: 20px 0 0 20px;
+}
+.plane-container {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-top: 0.5em;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  color: #462465;
+}
+.adding-plane {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.time-plane-container {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+.time-plane {
+  display: flex;
+}
+.time-plane div {
+  text-align: center;
+}
+.right {
+  color: #462465;
+}
+.left {
+  color: #462465;
+}
+.plus {
+  color: #462465;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.adding-plane div {
+  color: #462465;
+  display: flex;
+  align-items: center;
+}
+.check {
+  color: #462465;
+  background-color: #ffffff;
+  border-radius: 5px;
+  
+}
+.list {
+  color: #462465;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.check-box-time-plane-list {
+  display: flex;
+}
+
+.time-plane-title {
+  display: flex;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #462465;
+  background-color: #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.plane-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #462465;
+  background-color: #ffffff;
+  border-radius: 0 5px 5px 0;
 }
 @media (max-width: 768px) {
   .app-body {
@@ -118,6 +188,67 @@ html {
   .app-container {
     padding: 0.5em;
   }
+  .right {
+    font-size: 1.5rem;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+  .plus {
+    font-size: 1.2rem;
+    padding: 0.1em 0.4em;
+  }
+  .check {
+    font-size: 1rem;
+    padding: 0.1em 0.3em;
+  }
+  .list {
+    font-size: 1rem;
+    padding: 0.1em 0.3em;
+  }
+  .adding-plane div {
+    margin-right: 0.5em;
+    font-size: 1rem;
+  }
+  .plane-container {
+    padding: 0.4rem;
+  }
+  .adding-plane {
+    flex: 0;
+  }
+  .hour {
+    flex: 1.5;
+  }
+  .plane {
+    flex: 1;
+  }
+  .check-box-time-plane-list {
+    margin-top: 0.9em;
+  }
+  .check-box {
+    flex: 0.5;
+  }
+  .check-list {
+    flex: 0.5;
+  }
+  .time-plane-title {
+    flex: 2;
+  }
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .time {
+    flex: 1;
+    border-right: 3px solid #5857a5;
+  }
+  .plane-title {
+    flex: 2;
+  }
+  .time-plane-title div {
+    font-size: 0.6rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -143,6 +274,66 @@ html {
     font-size: 1.5rem;
     padding: 1rem 0.1rem;
   }
+  .right {
+    font-size: 2rem;
+  }
+  .left {
+    font-size: 2rem;
+  }
+  .plus {
+    font-size: 2rem;
+    padding: 0.1em 0.3em;
+  }
+  .adding-plane div {
+    margin-right: 1em;
+    font-size: 1.5rem;
+  }
+  .plane-container {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .check {
+    font-size: 2rem;
+    padding: 0.1em 0.3em;
+  }
+  .list {
+    font-size: 2rem;
+    padding: 0.1em 0.3em;
+  }
+  .hour {
+    flex: 1;
+  }
+  .plane {
+    flex: 1;
+    margin-right: 4em;
+  }
+  .check-box-time-plane-list {
+    margin-top: 1em;
+  }
+  .check-box {
+    flex: 1;
+  }
+  .check-list {
+    flex: 1;
+  }
+  .time-plane-title {
+    flex: 7;
+  }
+  .time {
+    flex: 2;
+    border-right: 5px solid #5857a5;
+  }
+  .plane-title {
+    flex: 4;
+  }
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .time-plane-title div {
+    font-size: 1.1rem;
+  }
 }
 @media only screen and (min-width: 1600px) {
   .options {
@@ -165,5 +356,23 @@ html {
   .day-date-card {
     font-size: 2.3rem;
     padding: 1rem 0.1rem;
+  }
+
+  .right {
+    font-size: 3rem;
+  }
+  .left {
+    font-size: 3rem;
+  }
+  .plus {
+    font-size: 3rem;
+    padding: 0.1em 0.3em;
+  }
+  .adding-plane div {
+    margin-right: 1em;
+    font-size: 2rem;
+  }
+  .plane-container {
+    padding: 2rem;
   }
 }
