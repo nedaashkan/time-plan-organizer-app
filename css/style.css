@@ -13,12 +13,14 @@ body,
 html {
   background-color: #c6d4d5;
   font-family: "Inter";
+  height: 100%;
 }
 
 .app-body {
   max-width: 75%;
   margin: 0 auto;
   padding: 1em 0.5em;
+  height: 100%;
 }
 
 .options {
@@ -45,6 +47,7 @@ html {
   display: flex;
   flex-direction: column;
 }
+
 .img-frame img {
   display: block;
   margin: 0 auto;
@@ -89,6 +92,7 @@ html {
   border: 5px solid #ffffff;
   border-radius: 5px;
   color: #462465;
+  overflow: auto;
 }
 .adding-plane {
   flex: 1;
@@ -126,7 +130,6 @@ html {
   color: #462465;
   background-color: #ffffff;
   border-radius: 5px;
-  
 }
 .list {
   color: #462465;
